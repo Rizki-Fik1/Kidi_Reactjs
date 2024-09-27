@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Salam from './components/hello';
+import Greetings from './components/cc';
+import Febri from './components/Febri';
+import Follow from './components/follow';
+import Kucing from './Assets/kucing.jpg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Salam></Salam>
+      <Greetings></Greetings>
+      <Febri name="Kusuma Satria"></Febri>
+      <Febri name="Aninda Felicia"></Febri>
+      <Febri name="Waluyan Abdi"></Febri>
+      <Follow></Follow>
+      <br></br>
+      <img src={Kucing}></img>
     </div>
   );
 }
